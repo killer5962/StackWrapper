@@ -17,13 +17,14 @@ StackWrapper helps you easily and efficiently arrange your desired elements usin
 ---------
 
 ## Configuration ⚙️
-| Parameter |  Type     | Default Value                       |
-| :-------- | :------- | :-------------------------------- |
-| hSpacing      | `CGFloat` | 10 |
-| vSpacing      | `CGFloat` | 10 |
-| alignment      | `HorizontalAlignment` | .leading |
-| fixedSize     | `Bool` | true |
-| animation     | `Animation?` | nil |
+| Parameter  | Type              | Default Value       | Description |
+| :--------  | :---------------- | :------------------ | :---------- |
+| `items`    | `[T]`              | N/A                 | **Required**: An array of items conforming to `Hashable`. |
+| `hSpacing` | `CGFloat`          | 10                  | Horizontal spacing between items. |
+| `vSpacing` | `CGFloat`          | 10                  | Vertical spacing between rows. |
+| `alignment`| `HorizontalAlignment` | `.leading`        | The alignment of items horizontally. |
+| `fixedSize`| `Bool`             | true                | Whether each item should have a fixed size or not. |
+| `animation`| `Animation?`       | nil                 | Optional animation when the container height changed. |
 
 ---------
 
